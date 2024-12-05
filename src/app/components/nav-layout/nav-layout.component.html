@@ -1,0 +1,52 @@
+<div class="main-content">
+
+    <ng-content></ng-content>
+
+    <div class="bottom-navigation-container">
+
+        <div class="bottom-navigation">
+
+            <div class="nav-item">
+
+                <span class="material-symbols-outlined">
+                    home
+                </span>
+    
+                <span>Home</span>
+            </div>
+    
+            <div
+                class="nav-item"
+                (click)="navigateTo('/calories')"
+            >
+    
+                <span class="material-symbols-outlined">
+                    restaurant
+                </span>
+    
+                <span>Diet</span>
+            </div>
+    
+            <div
+                class="nav-item"
+                (click)="navigateTo('/assistant')"
+            >
+    
+                <span class="material-symbols-outlined">
+                    smart_toy
+                </span>
+    
+                <span>Assistant</span>
+            </div>
+    
+            <div class="nav-item">
+    
+                <span class="material-symbols-outlined">
+                    account_circle
+                </span>
+                
+                <span>Profile</span>
+            </div>
+        </div>
+    </div>
+</div>
