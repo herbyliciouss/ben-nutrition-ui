@@ -1,0 +1,34 @@
+.assistant-container {
+    padding: 30px;
+    height: 85%;
+}
+
+.messages-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 95%;
+}
+
+.message {
+    padding: 20px;
+    background-color: var(--purple);
+    color: var(--white);
+    border-radius: 20px;
+    align-self: flex-end;
+}
+
+.assistant {
+    color: black;
+    background-color: var(--white);
+    align-self: flex-start;
+}
+
+.user-input {
+    border-radius: 30px;
+    height: 30px;
+    width: 100%;
+    padding-left: 10px;
+    font-family: "Funnel Sans", sans-serif;
+    font-size: 16px;
+}
