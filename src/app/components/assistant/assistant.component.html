@@ -1,14 +1,30 @@
 <div class="assistant-container">
 
-    <div class="messages-container">
+    <div
+        #messagesContainer
+        class="messages-container">
 
         @for(message of messages; track message) {
 
-            <div
-                class="message"
-                [class.assistant]="message.isAssistant">
-                {{ message.text }}
-            </div>
+            @if (message.isLoading) {
+
+                <div
+                    class="typing-indicator message assistant">
+
+                    <div class="typing-dot"></div>
+
+                    <div class="typing-dot"></div>
+
+                    <div class="typing-dot"></div>
+                </div>
+            } @else {
+
+                <div
+                    class="message"
+                    [class.assistant]="message.isAssistant"
+                    [innerHTML]="message.text">
+                </div>
+            }
         }
     </div>
 
