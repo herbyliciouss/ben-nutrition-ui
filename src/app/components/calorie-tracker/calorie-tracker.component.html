@@ -1,1 +1,52 @@
-<p>calorie-tracker works!</p>
+<h1 class="header">Calorie Tracker</h1>
+
+<div class="calorie-goal-container card-container">
+
+    <span class="material-symbols-outlined calorie-icon">
+        local_fire_department
+    </span>
+
+    <h2 class="calories-eaten">1,745cal</h2>
+    
+    <span class="calories-left">312cal left for today.</span>
+
+    <div class="progress-container">
+
+        <div class="progress-bar" [class.animate]="isAnimated"></div>
+    </div>
+</div>
+
+<div class="macros-counter">
+
+    <div class="macro-card-container">
+        
+        <span class="macro-amount">120g</span>
+
+        <span class="macro-name">Protein</span>
+
+        <div class="macro-progress-bar"></div>
+    </div>
+
+    <div class="macro-card-container">
+        
+        <span class="macro-amount">50g</span>
+
+        <span class="macro-name">Carbs</span>
+
+        <div class="macro-progress-bar"></div>
+    </div>
+
+    <div class="macro-card-container">
+        
+        <span class="macro-amount">8g</span>
+
+        <span class="macro-name">Fat</span>
+
+        <div class="macro-progress-bar"></div>
+    </div>
+</div>
+
+<div class="meal-actions">
+
+    <button class="meal-action-button">Add Meal</button>
+</div>

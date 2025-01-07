@@ -1,11 +1,6 @@
-:host {
-    width: 412px; // Arbitrary width that matches a pixel 7 width to prototype mobile first for now, TODO - Make the app responsive
-    height: 100vh;
-}
-
 .main-content {
     background-color: var(--main-bg-color);
-    height: 100%;
+    height: 100vh;
     position: relative;
 }
 
